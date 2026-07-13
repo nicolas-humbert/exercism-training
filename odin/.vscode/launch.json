@@ -1,0 +1,21 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Odin: debug tous les tests (exercice courant)",
+			"type": "lldb",
+			"request": "launch",
+			"program": "${fileDirname}/debug_test.bin",
+			"cwd": "${fileDirname}",
+			"preLaunchTask": "Odin: build tests (debug)"
+		},
+		{
+			"name": "Odin: debug un seul test (exercice courant)",
+			"type": "lldb",
+			"request": "launch",
+			"program": "${fileDirname}/debug_test.bin",
+			"cwd": "${fileDirname}",
+			"preLaunchTask": "Odin: build tests (debug, un seul test)"
+		}
+	]
+}
