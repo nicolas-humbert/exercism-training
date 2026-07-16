@@ -69,7 +69,7 @@ test_rna_complement :: proc(t: ^testing.T) {
 // If you want to learn more about Odin's tracking allocation,
 // you can watch this You Tube video
 // https://www.youtube.com/watch?v=dg6qogN8kIE
-// @(test)
+@(test)
 test_no_memory_leaks :: proc(t: ^testing.T) {
 	track: mem.Tracking_Allocator
 	mem.tracking_allocator_init(&track, context.allocator)

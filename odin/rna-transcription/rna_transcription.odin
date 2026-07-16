@@ -5,7 +5,6 @@ import "core:strings"
 
 to_rna :: proc(dna: string) -> (rna: string, ok: bool) {
 	sb := strings.builder_make()
-	defer free(&sb)
 
 	for r, i in dna {
 		switch r {
