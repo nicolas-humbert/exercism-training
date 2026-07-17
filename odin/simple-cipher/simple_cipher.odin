@@ -5,7 +5,6 @@ import "core:strings"
 
 CHARSET := "abcdefghijklmnopqrstuvwxyz"
 
-
 decode :: proc(ciphertext, key: string) -> string {
 	key_count := 0
 
